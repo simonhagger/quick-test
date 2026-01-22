@@ -1,0 +1,42 @@
+# CODEOWNERS (disabled by default)
+# This file ships as examples only. Uncomment and replace with real team
+# or user handles when your organization is ready to enforce code owner
+# reviews. Lines starting with # are ignored by GitHub.
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repo (example)
+# * @your-team
+
+# Core application architecture (example)
+# /src/app/app.config.ts @platform-team
+# /src/app/app.routes.ts @platform-team
+
+# Shared components and services (example)
+# /src/app/shared/ @platform-team
+
+# Theming and design system (example)
+# /src/styles.scss @design-team
+# /src/tailwind.css @design-team
+
+# Build and infrastructure (example)
+# /angular.json @devops-team
+# /package.json @devops-team
+# /tsconfig*.json @devops-team
+# /vitest.config.ts @devops-team
+
+# CI/CD pipelines (example)
+# /.github/workflows/ @devops-team
+
+# Verification scripts (example)
+# /tools/scripts/ @platform-team
+
+# Git hooks (example)
+# /.husky/ @platform-team
+
+# Documentation (example)
+# /docs/ @tech-writers
+# /README.md @tech-writers
+
+# Feature-specific ownership (example)
+# /src/app/features/auth/ @security-team
+# /src/app/features/payments/ @payments-team

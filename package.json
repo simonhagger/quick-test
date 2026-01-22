@@ -1,0 +1,75 @@
+{
+  "name": "qa-actions-demo2",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "vitest run",
+    "prepare": "husky",
+    "dev": "ng serve",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write . --ignore-unknown",
+    "format:check": "prettier --check . --ignore-unknown",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "verify:structure": "node tools/scripts/verify-structure.mjs",
+    "verify:app-routes": "node tools/scripts/verify-app-routes.mjs",
+    "verify:feature-routes": "node tools/scripts/verify-feature-routes.mjs",
+    "verify:no-cross-feature-imports": "node tools/scripts/verify-no-cross-feature-imports.mjs",
+    "verify:no-raw-colors": "node tools/scripts/verify-no-raw-colors.mjs",
+    "verify": "pnpm run verify:structure && pnpm run verify:app-routes && pnpm run verify:feature-routes && pnpm run verify:no-cross-feature-imports && pnpm run verify:no-raw-colors",
+    "gen:feature": "node tools/scripts/generate-feature.mjs"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "packageManager": "pnpm@10.14.0",
+  "dependencies": {
+    "@angular/cdk": "~21.1.1",
+    "@angular/common": "^21.1.0",
+    "@angular/compiler": "^21.1.0",
+    "@angular/core": "^21.1.0",
+    "@angular/forms": "^21.1.0",
+    "@angular/material": "~21.1.1",
+    "@angular/platform-browser": "^21.1.0",
+    "@angular/router": "^21.1.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.1.0",
+    "@angular/cli": "^21.1.0",
+    "@angular/compiler-cli": "^21.1.0",
+    "@angular/material": "21.1.1",
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "@eslint/js": "^9.39.2",
+    "@tailwindcss/postcss": "^4.1.12",
+    "@vitest/coverage-v8": "^4.0.17",
+    "angular-eslint": "^21.1.0",
+    "eslint": "^9.39.2",
+    "husky": "^9.1.7",
+    "jsdom": "^27.4.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "4.1.18",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.53.1",
+    "vitest": "^4.0.17"
+  }
+}
